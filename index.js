@@ -76,13 +76,15 @@ console.log(g);
 console.log(leReste);   //> ["trois" , 10,100,1000]
 
 
-[,, ...leReste2] = totoo;
-console.log(leReste2);   // meme chose sans avoir nommé les 2 premiers >["trois" , 10,100,1000]
+[,, ...leReste2] = totoo;   
+console.log(leReste2);   // les 2 virgules retire les 2 premieres valeurs >["trois" , 10,100,1000]
 
 
+[, ...leReste2] = totoo;   // retire la premiere valeur
+console.log(leReste2);
 
-
-
+[...leReste2] = totoo;   //>retire rien 
+console.log(leReste2);
 
 
 
